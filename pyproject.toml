@@ -1,6 +1,6 @@
 [project]
 name = "nuki"
-version = "0.0.0.beta"
+version = "0.0.2.beta"
 description = "Add your description here"
 readme = "README.md"
 authors = [
@@ -18,6 +18,7 @@ build-backend = "setuptools.build_meta"
 [dependency-groups]
 dev = [
     "black>=25.1.0",
+    "ipykernel>=6.29.5",
     "pytest>=8.3.5",
     "ruff>=0.9.10",
 ]
