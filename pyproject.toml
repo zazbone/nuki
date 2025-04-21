@@ -1,6 +1,6 @@
 [project]
 name = "nuki"
-version = "0.0.3.beta"
+version = "0.3.0.beta"
 description = "Add your description here"
 readme = "README.md"
 authors = [
