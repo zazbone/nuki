@@ -25,9 +25,9 @@ erfc(z)
 from numbers import Number
 
 import array_api_compat as aa
-from array_api_compat import numpy
+import numpy
 
-__all__ = ["array_namespace"]
+__all__ = ("array_namespace",)
 
 DEFAULT_ARRAY_API_VERSION = "v2022.12"
 
