@@ -58,4 +58,4 @@ def test_array_namespace(array_modules):
     scalar2 = 10
     scalar3 = 1.0 + 7j
     namespace = compat.array_namespace(scalar1, scalar2, scalar3)
-    assert namespace is array_api_compat.numpy
+    assert namespace is np
