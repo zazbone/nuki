@@ -1,7 +1,7 @@
 import numpy as np
 from array_api_compat import is_numpy_array, numpy
 from pytest import fixture
-from scipy.special import erf
+from scipy.special import erf, ndtr
 
 from nuki import special
 
@@ -23,3 +23,10 @@ def test_erf(array_backends):
         x = xp.linspace(-1, 2, 24)
         np.testing.assert_allclose(erf(x), special.erf(x))
         assert is_xp(special.erf(x))
+
+
+def test_ndtr(array_backends):
+    for xp, is_xp in array_backends:
+        x = xp.linspace(-2, 2, 24)
+        np.testing.assert_allclose(ndtr(x), special.ndtr(x))
+        assert is_xp(special.ndtr(x))
