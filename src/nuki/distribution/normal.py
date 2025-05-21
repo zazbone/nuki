@@ -29,7 +29,6 @@ from nuki.special import ndtr
 __all__ = ("cdf", "integral", "pdf")
 
 INV_SQRT_2PI = 0.3989422804014327
-INV_SQRT_2 = 0.7071067811865476
 
 
 def cdf(x: ArrayLike, /, *, mean=0, scale=1):
